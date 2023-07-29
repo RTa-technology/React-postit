@@ -1,0 +1,31 @@
+/* src/components/Notes/Notes.css */
+
+.note {
+    border: 1px solid #ccc;
+    background-color: #f0f0f0; 
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.note-header {
+    display: flex;
+    justify-content: flex-end;
+    cursor: move; /* Indicates the header can be dragged */
+}
+
+.delete-button {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.note-content {
+    overflow: auto;
+}
+
+.note-footer {
+    align-self: end;
+}
